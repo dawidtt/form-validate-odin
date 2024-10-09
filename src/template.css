@@ -34,3 +34,56 @@ img {
   display: block;
   max-inline-size: 100%;
 }
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7a7a;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+}
+.container form > div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.error {
+  position: absolute;
+  bottom: -22px;
+  font-size: 0.9rem;
+  color: red;
+}
+.input-error {
+  outline: 1px solid red;
+  border: 1px solid red;
+}
+input,
+select {
+  border: 1px solid rgba(0, 0, 0, 0.493);
+  padding: 4px;
+  border-radius: 5px;
+}
+form label {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.712);
+  margin-bottom: 5px;
+}
+.container form button {
+  background-color: #38cc8c;
+  border: none;
+  padding: 18px 9px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
