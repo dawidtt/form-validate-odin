@@ -10,7 +10,13 @@
       <form novalidate>
         <div class="mail-container">
           <label for="mail-input">Email</label>
-          <input type="email" name="mail-input" id="mail-input" required />
+          <input
+            type="email"
+            name="mail-input"
+            id="mail-input"
+            required
+            placeholder="example@gmail.com"
+          />
           <span class="mail-error error"></span>
         </div>
         <div class="country-container">
@@ -298,12 +304,19 @@
             id="zip-code-input"
             required
             minlength="5"
+            placeholder="12345-1234"
           />
           <span class="zip-code-error error"></span>
         </div>
         <div class="password-container">
           <label for="password-input">Password</label>
-          <input type="password" name="password-input" id="password-input" />
+          <input
+            type="password"
+            name="password-input"
+            id="password-input"
+            required
+            minlength="6"
+          />
           <span class="password-error error"></span>
         </div>
         <div class="password-repeat-container">
@@ -312,6 +325,8 @@
             type="password"
             name="password-repeat-input"
             id="password-repeat-input"
+            required
+            minlength="6"
           />
           <span class="password-repeat-error error"></span>
         </div>
